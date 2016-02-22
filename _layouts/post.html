@@ -27,3 +27,16 @@ layout: default
     <a {% if page.next %} href="{{ page.next.url }}" class="pageNav"{% endif %} {% unless page.next %} class="pageNavInvalid" {% endunless %} >下一篇</a>
   </span>
 </section>
+
+<div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url }}"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"hanfengblog"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
